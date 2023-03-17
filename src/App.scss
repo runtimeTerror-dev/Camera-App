@@ -1,0 +1,72 @@
+
+html, body, #root, .App{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#camera-viewport{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#ui{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  overflow: hidden;
+
+  #control-panel{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 230px;
+    background: rgba(0, 0, 0, 0.84);
+    border: 1px solid #000000;
+    height: 100%;
+
+    #capture-button{
+
+      button{
+        background-color: transparent;
+        border: none; padding: 0; margin: 0;
+      }
+      
+    }
+
+    #exposure-panel {
+
+      #exposure-space {
+        position: relative;
+        width: 197px;
+        height: 197px;
+
+        #exposure-marker {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+      }
+
+    }
+  }
+
+  #side-panel{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.84);
+    border: 1px solid #000000;
+  }
+}
